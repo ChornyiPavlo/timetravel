@@ -1,0 +1,566 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="10709663" data-tilda-page-id="55543185" data-tilda-formskey="a55c0c751e1a899d7ce6ec4c10709663" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="one" ><div id="rec803777553" class="r t-rec t-rec_pb_0" style="padding-bottom:0px; " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav803777553marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span><span style="background-color:#ffffff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('803777553');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec803777553 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec803777553 .tmenu-mobile__burgerlogo a { color: #ffffff; }</style><style> #rec803777553 .tmenu-mobile__burgerlogo__title { color: #ffffff; }</style><div id="nav803777553" class="t228 t228__positionabsolute tmenu-mobile__menucontent_hidden" style="background-color: rgba(16,16,16,0.0); height:80px; " data-bgcolor-hex="#101010" data-bgcolor-rgba="rgba(16,16,16,0.0)" data-navmarker="nav803777553marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="0.0" data-menu-items-align="left" data-menu="yes"><div class="t228__maincontainer " style="height:80px;"><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><div class="t228__logo t-title" field="title">Time travel</div></div></div><div class="t228__centerside t228__menualign_left"><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#about" data-menu-submenu-hook="" data-menu-item-number="1"
+>Oyun hakkında</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#schedule" data-menu-submenu-hook="" data-menu-item-number="2"
+>Oyun Özellikleri</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="" data-menu-submenu-hook="" data-menu-item-number="3"
+>İletişim</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_descr">+99450 616-26-08</div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec803777553 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('803777553', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('803777553');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('803777553', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('803777553');
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('803777553', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec803777553 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9101010', endColorstr='#D9101010');
+}</style><![endif]--><style>#rec803777553 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+#rec803777553 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#a0de54 !important; }
+#rec803777553 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover {
+color: #a0de54 !important; }
+#rec803777553 .t-menu__link-item:not(.t-active):not(.tooltipstered):focus-visible{
+color: #a0de54 !important; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec803777553 .t-menu__link-item,
+#rec803777553 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec803777553 .t228__leftcontainer a { color: #ffffff; } #rec803777553 a.t-menu__link-item { color: #ffffff; font-weight: 600; } #rec803777553 .t228__right_langs_lang a { color: #ffffff; font-weight: 600; } #rec803777553 .t228__right_descr { font-size: 20px; color: #ffffff; font-weight: 500; }</style><style> #rec803777553 .t228__logo { color: #ffffff; }</style></div><div id="rec803777554" class="r t-rec t-rec_pb_0" style="padding-bottom:0px;background-color:#101010; " data-animationappear="off" data-record-type="996" data-bg-color="#101010"><!-- t996 --><div class="t996"><div
+class="t996__wrapper"
+style="height:"
+><div class="t996__container t996__valign_middle"><div class="t-container"><div class="t-col t-col_8 "><div
+class="t996__title t-title t-title_md"
+field="title"
+>Pin-up <span style="color: rgb(19, 206, 102);">ile Zaman Yolculuğu</span></div><div
+class="t996__descr t-descr t-descr_lg"
+field="descr"
+>Zaman, en gizemli ve büyülü kavramlardan biridir. Şimdi, "Time Travel" adlı oyun ile birlikte, pin-up temalı bir zaman yolculuğuna çıkmaya hazır mısınız? </div><div class="t996__buttons"><div
+class="t996__btn-wrapper"
+><a
+href="#form"
+class="t996__btn t-btn t-btn_md"
+style="color:#ffffff;background-color:#13ce66;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;" data-field="buttontitle" data-buttonfieldset="button"
+>Oyunu indir</a></div></div></div></div></div><div
+class="t996__cover-wrapper"
+style="width:100;" ><div
+class="t996__cover t-bgimg" data-original="images/tild6561-6661-4531-b337-653131393863__1.jpg"
+style="background-image:url('images/tild6561-6661-4531-b337-653131393863__-__resizeb__20x__1.jpg');"
+itemscope itemtype="http://schema.org/ImageObject"
+><meta itemprop="image" content="images/tild6561-6661-4531-b337-653131393863__1.jpg" /></div></div></div></div><style> @media screen and (min-width: 900px) { #rec803777554 .t996__title { font-size: 56px; } } #rec803777554 .t996__descr { font-size: 24px; }</style></div><div id="rec803777556" class="r t-rec t-rec_pt_90 t-rec_pb_0" style="padding-top:90px;padding-bottom:0px;background-color:#f5f5f5; " data-record-type="255" data-bg-color="#f5f5f5"><!-- T225 --><div class="t225"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t225__title t-title t-title_md" field="title">Oyun hakkında <span style="color: rgb(19, 206, 102);">Time Travel Pin-up</span></div> <div class="t225__descr t-descr t-descr_xxl" field="descr">"Time Travel", oyunculara geçmişe ve geleceğe yapacakları yolculuklar ile dolu, zengin bir hikaye sunuyor. Zaman makineleri, shocking maceralar ve pin-up temalı karakterlerle dolu bir dünyada kaybolmaya hazır olun! Farklı dönemlerdeki önemli olaylara tanıklık ederken, tarihin akışını değiştirmek veya korumak adına keyifli bir mücadeleye katılacaksınız. </div> </div></div></div><style> #rec803777556 .t225__uptitle { text-transform: uppercase; }</style></div><div id="rec803777557" class="r t-rec t-rec_pt_120 t-rec_pb_45" style="padding-top:120px;padding-bottom:45px;background-color:#f5f5f5; " data-record-type="490" data-bg-color="#f5f5f5"><!-- t490 --><div class="t490"><div class="t490__container t-card__container t-container"><div class="t-card__col t-card__col_withoutbtn t490__col t-col t-col_4 t-align_center t-item"><img class="t490__img t-img" 
+src="images/tild6639-3434-4735-b763-646338633065__-__empty__index.png" data-original="images/tild6639-3434-4735-b763-646338633065__index.png" 
+imgfield="li_img__1476968690512"
+alt=""><div class="t490__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1476968690512">Dinamik Oynanış</div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476968690512">"Time Travel", pin-up teması ile zenginleştirilmiş dinamik bir oynanış sunuyor. Oyuncular her zaman diliminde yeni görevler ve zorluklarla karşılaşacak. Zaman yolculuğunuz sırasında geçeceğiniz dönemler arasında seçim yapacak, çeşitli karakterlerle etkileşimde bulunacak ve gelecek için önemli kararlar alacaksınız. </div><style> #rec803777557 .t-card__title { font-size: 24px; } #rec803777557 .t-card__descr { font-size: 20px; }</style></div></div><div class="t-card__col t-card__col_withoutbtn t490__col t-col t-col_4 t-align_center t-item"><img class="t490__img t-img" 
+src="images/tild3765-6232-4231-b361-333834316262__-__empty__2.png" data-original="images/tild3765-6232-4231-b361-333834316262__2.png" 
+imgfield="li_img__1476968700508"
+alt=""><div class="t490__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1476968700508">Çeşitli Dönemler</div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476968700508">Zaman yolculuğu, tarih öncesi dönemlerden, geleceğin distopik dünyalarına kadar geniş bir yelpazeyi kapsar. Pin-up temalı karakterler, bu farklı dönemlerin her birinin ruhunu yansıtacak. Eski Mısır'dan Orta Çağ'a, feodal Japonya'dan kıyamet sonrası dünyalara kadar birçok farklı ortamda maceralar yaşayacaksınız. Her dönemin kendine özgü kültürü ve zorlukları sizi bekliyor.</div><style> #rec803777557 .t-card__title { font-size: 24px; } #rec803777557 .t-card__descr { font-size: 20px; }</style></div></div><div class="t-card__col t-card__col_withoutbtn t490__col t-col t-col_4 t-align_center t-item"><img class="t490__img t-img" 
+src="images/tild6638-6362-4361-b731-376531306262__-__empty__3.png" data-original="images/tild6638-6362-4361-b731-376531306262__3.png" 
+imgfield="li_img__1476968722790"
+alt=""><div class="t490__wrappercenter"><div class="t-card__title t-heading t-heading_md" field="li_title__1476968722790">Yaratıcı Karakter Özelleştirmesi</div><div class="t-card__descr t-descr t-descr_xs" field="li_descr__1476968722790">Oyun, pin-up tarzı karakter özelleştirmesine olanak tanıyor. Her karakterin korkuları, yetenekleri ve güçlü yönleri vardır.İstediğiniz tarzda bir karakter oluşturabilir, özelleştirerek oyununuzda fark yaratabilirsiniz. Kendi karakterinizi yaratarak, ona beceriler kazandırabilir ve bu becerileri geliştirebilirsiniz.</div><style> #rec803777557 .t-card__title { font-size: 24px; } #rec803777557 .t-card__descr { font-size: 20px; }</style></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t490_init', function () {
+t490_init('803777557');
+});
+});</script></div><div id="rec803777558" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px;background-color:#f5f5f5; " data-animationappear="off" data-record-type="670" data-bg-color="#f5f5f5"><!-- t670 --><div class="t670"><div class="t-slds" style="visibility: hidden;"><div class="t-container t-slds__main"><ul class="t-slds__arrow_container t-slds__arrow_container-outside"><style type="text/css">#rec803777558 .t-slds__arrow_wrapper:hover .t-slds__arrow-withbg {
+background-color: rgba(141,235,183,1) !important;
+}
+#rec803777558 .t-slds__arrow-withbg:focus-visible {
+background-color: rgba(141,235,183,1) !important;
+}</style><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
+aria-controls="carousel_803777558" 
+aria-disabled="false" 
+aria-label="Предыдущий слайд"
+style="width: 40px; height: 40px;background-color: rgba(19,206,102,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#ffffff"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
+aria-controls="carousel_803777558" 
+aria-disabled="false" 
+aria-label="Следующий слайд"
+style="width: 40px; height: 40px;background-color: rgba(19,206,102,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#ffffff"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="1" 
+points="0.5,0.5 8.5,8.5 0.5,16.5" 
+/></svg></div></button></li> </ul><div class="t-slds__container t-width t-width_12 t-margin_auto"><div class="t-slds__items-wrapper t-slds__witharrows t-slds_animated-none" 
+id="carousel_803777558" data-slider-transition="300" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-arrows-nearpic="yes" 
+aria-roledescription="carousel" 
+aria-live="off"
+><div class="t-slds__item t-slds__item_active" data-slide-index="1" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="1 из 4"
+><div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3362-3735-4535-a332-386661623731__2.jpg"> <div class="t670__imgwrapper" bgimgfield="gi_img__0"><div class="t-slds__bgimg t-bgimg" data-original="images/tild3362-3735-4535-a332-386661623731__2.jpg"
+style="background-image: url('images/tild3362-3735-4535-a332-386661623731__-__resizeb__20x__2.jpg');"
+></div><div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550"></div></div></div></div></div><div class="t-slds__item" data-slide-index="2" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="2 из 4"
+><div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3138-6330-4831-a531-383838383865__3.png"> <div class="t670__imgwrapper" bgimgfield="gi_img__1"><div class="t-slds__bgimg t-bgimg" data-original="images/tild3138-6330-4831-a531-383838383865__3.png"
+style="background-image: url('images/tild3138-6330-4831-a531-383838383865__-__resizeb__20x__3.png');"
+></div><div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550"></div></div></div></div></div><div class="t-slds__item" data-slide-index="3" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="3 из 4"
+><div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3066-3733-4636-b533-666261653338__4.png"> <div class="t670__imgwrapper" bgimgfield="gi_img__2"><div class="t-slds__bgimg t-bgimg" data-original="images/tild3066-3733-4636-b533-666261653338__4.png"
+style="background-image: url('images/tild3066-3733-4636-b533-666261653338__-__resizeb__20x__4.png');"
+></div><div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550"></div></div></div></div></div><div class="t-slds__item" data-slide-index="4" 
+role="group" 
+aria-roledescription="slide" 
+aria-hidden="false" 
+aria-label="4 из 4"
+><div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject"><div class="t-slds__wrapper t-align_center"><meta itemprop="image" content="images/tild3135-3662-4930-b138-323465386135__5.png"> <div class="t670__imgwrapper" bgimgfield="gi_img__3"><div class="t-slds__bgimg t-bgimg" data-original="images/tild3135-3662-4930-b138-323465386135__5.png"
+style="background-image: url('images/tild3135-3662-4930-b138-323465386135__-__resizeb__20x__5.png');"
+></div><div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550"></div></div></div></div></div></div></div><ul class="t-slds__bullet_wrapper"><li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 1" 
+aria-current="true" 
+style="background-color: #13ce66;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="2"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 2" 
+style="background-color: #13ce66;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="3"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 3" 
+style="background-color: #13ce66;"></button></li><li class="t-slds__bullet " data-slide-bullet-for="4"><button 
+type="button" 
+class="t-slds__bullet_body" 
+aria-label="Перейти к слайду 4" 
+style="background-color: #13ce66;"></button></li></ul><div class="t-slds__caption__container"></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t670_init', function () {
+t670_init('803777558', false);
+});
+});</script><style>#rec803777558 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #222 !important;
+}
+#rec803777558 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style></div><div id="rec803777561" class="r t-rec t-rec_pt_75 t-rec_pb_75" style="padding-top:75px;padding-bottom:75px;background-color:#13ce66; " data-record-type="209" data-bg-color="#13ce66"><!-- T185 --><div class="t185"><div class="t-container t-container_flex"><div class="t-col t-col_flex t-col_8 t-prefix_2"><div class="t185__text t-text t-text_lg" field="text">Deneme sürümünü buradan indirin</div></div><div class="t185__butwrapper t-col t-col_2 "><a href="#form" target="" class="t-btn t-btn_md " style="color:#ffffff;background-color:#101010;border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;" data-buttonfieldset="button"
+><table role="presentation" style="width:100%; height:100%;"><tr><td>Oyunu indir</td></tr></table></a></div></div></div><style> #rec803777561 .t185__text { font-weight: 500; } @media screen and (min-width: 480px) { #rec803777561 .t185__text { font-size: 28px; } }</style></div><div id="rec803777571" class="r t-rec t-rec_pt_135 t-rec_pb_150" style="padding-top:135px;padding-bottom:150px;background-color:#f5f5f5; " data-animationappear="off" data-record-type="772" data-bg-color="#f5f5f5"><!-- T772 --><div class="t772"><div class="t-section__container t-container t-container_flex"><div class="t-col t-col_12 "><div 
+class="t-section__title t-title t-title_xs t-align_center t-margin_auto"
+field="btitle"
+>Oyun Özellikleri</div></div></div><style>.t-section__descr {max-width: 560px;}#rec803777571 .t-section__title {margin-bottom: 90px;}#rec803777571 .t-section__descr {}@media screen and (max-width: 960px) {#rec803777571 .t-section__title {margin-bottom: 60px;}}</style><div class="t772__wrapper t-card__container t772__container t772__container_mobile-grid"><div class="t-card__col t772__col t-col t-col_4 t-align_left t-item t772__col_mobile-grid"><div class="t772__content"><div class="t772__imgwrapper " style="padding-bottom:94.444444444444%;"><div class="t772__bgimg t-bgimg" data-original="images/tild6630-6265-4864-b530-336435356535__6.jpeg" 
+bgimgfield="li_img__1495010928665" 
+style="background-image:url('images/tild6630-6265-4864-b530-336435356535__-__resizeb__20x__6.jpeg');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6630-6265-4864-b530-336435356535__6.jpeg"> </div></div><div class="t772__textwrapper"><div class="t-card__title t-name t-name_md" field="li_title__1495010928665">Farklı Görevler ve Hedefler</div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1495010928665">Her zaman diliminde zorlu görevler ve ilginç hedefler ile karşılaşacaksınız. Her görev, zamanın akışındaki dengeyi sağlamak için büyük bir fırsat içeriyor. Kimi zaman bir tarihi olayı kaydetmeli, kimi zaman ise tarihi değiştirecek kararlar almanız gerekecek. Karşılaştığınız engelleri aşmak ve başarıyla görevlerinizi tamamlamak için stratejilere ihtiyaç duyacaksınız.</div></div></div><div class="t-card__btn-wrapper"><div 
+class="t-card__btn t-btn t-btn_xs" 
+id="cardbtn1_803777571" 
+style="color:#ffffff;background-color:#13ce66;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" data-field="li_buttontitle__1495010928665"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1495010928665"
+>Daha fazla ayrıntı</div></div></div><div class="t-card__col t772__col t-col t-col_4 t-align_left t-item t772__col_mobile-grid"><div class="t772__content"><div class="t772__imgwrapper " style="padding-bottom:94.444444444444%;"><div class="t772__bgimg t-bgimg" data-original="images/tild6462-6636-4531-b164-646661336163__7.jpeg" 
+bgimgfield="li_img__1499960678558" 
+style="background-image:url('images/tild6462-6636-4531-b164-646661336163__-__resizeb__20x__7.jpeg');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6462-6636-4531-b164-646661336163__7.jpeg"> </div></div><div class="t772__textwrapper"><div class="t-card__title t-name t-name_md" field="li_title__1499960678558">Yapılandırılabilir Zaman Makinesi</div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1499960678558">Zaman yolculuğu yapmak için kullandığınız zaman makineniz, kullanıcı dostu bir sistemle donatılmıştır. Pin-up temalı zaman makinesi, seviyelere göre özelleştirilmelerini sağlar. Yeni parçalar ve geliştirmelerle makinenizi güçlendirerek, daha fazla zaman diliminde yolculuk yapma şansı kazanacaksınız.</div></div></div><div class="t-card__btn-wrapper"><div 
+class="t-card__btn t-btn t-btn_xs" 
+id="cardbtn2_803777571" 
+style="color:#ffffff;background-color:#13ce66;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" data-field="li_buttontitle__1499960678558"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1499960678558"
+>Daha fazla ayrıntı</div></div></div><div class="t-card__col t772__col t-col t-col_4 t-align_left t-item t772__col_mobile-grid"><div class="t772__content"><div class="t772__imgwrapper " style="padding-bottom:94.444444444444%;"><div class="t772__bgimg t-bgimg" data-original="images/tild6539-3164-4233-a339-323133306231__8.jpg" 
+bgimgfield="li_img__1495010946049" 
+style="background-image:url('images/tild6539-3164-4233-a339-323133306231__-__resizeb__20x__8.jpg');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6539-3164-4233-a339-323133306231__8.jpg"> </div></div><div class="t772__textwrapper"><div class="t-card__title t-name t-name_md" field="li_title__1495010946049">Grafik ve Ses</div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1495010946049">"Time Travel", detaylı grafikler ve etkileyici ses efektleri sunar. Pin-up temalı görseller, her karakterin ve ortamın daha çekici görünmesini sağlıyor. Sesler, her anın atmosferini güçlendirerek, oyuncuları deneyimlerinin içine daha da derinlemesine çekiyor. Zaman yolculuğu sırasında her yıldız yolculuğu seslerle dolu bir etkinlik haline gelecektir.</div></div></div><div class="t-card__btn-wrapper"><div 
+class="t-card__btn t-btn t-btn_xs" 
+id="cardbtn3_803777571" 
+style="color:#ffffff;background-color:#13ce66;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;" data-field="li_buttontitle__1495010946049"
+aria-hidden="true" data-buttonfieldset="li_button" data-lid="1495010946049"
+>Daha fazla ayrıntı</div></div></div></div></div><script type="text/javascript">t_onReady(function () {
+t_onFuncLoad('t772_init', function () {
+t772_init('803777571');
+});
+});</script></div><div id="rec803777574" class="r t-rec t-rec_pt_150 t-rec_pb_120" style="padding-top:150px;padding-bottom:120px;background-color:#13ce66; " data-record-type="573" data-bg-color="#13ce66"><!-- t573--><div class="t573"><div class="t-container"><div class="t-col t-col_6 t-prefix_3 t-align_center"> <div class="t573__contacts t-title t-title_sm" field="text">+99450 616-26-08<br />hello@timetravel.click</div><div class="t573__address t-text t-text_sm" field="text2">Azerbaijan,Baku, Nasimi district, Alimardan-bek Topchubashev 11</div><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_twitter"><a href="/" target="_blank" rel="nofollow" aria-label="twitter" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" xmlns="http://www.w3.org/2000/svg" width=30px height=30px viewBox="0 0 48 48"><g clip-path="url(#clip0_3697_102)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48ZM33.3482 14L25.9027 22.4686H25.9023L34 34H28.0445L22.5915 26.2348L15.7644 34H14L21.8082 25.1193L14 14H19.9555L25.119 21.3532L31.5838 14H33.3482ZM22.695 24.1101L23.4861 25.2173V25.2177L28.8746 32.7594H31.5847L24.9813 23.5172L24.1902 22.4099L19.1103 15.2997H16.4002L22.695 24.1101Z" fill="#ffffff"/></g><defs><clipPath id="clip0_3697_102"><rect width="48" height="48" fill="white"/></clipPath></defs></svg></a></li>&nbsp;<li class="t-sociallinks__item t-sociallinks__item_vk"><a href="/" target="_blank" rel="nofollow" aria-label="vk" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#ffffff"/></svg></a></li>&nbsp;<li class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/" target="_blank" rel="nofollow" aria-label="telegram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#ffffff"/></svg></a></li><!-- /new soclinks --></ul></div></div></div></div><style> #rec803777574 .t573__contacts { color: #ffffff; } #rec803777574 .t573__address { color: #ffffff; }</style></div></div><!--/allrecords-->
